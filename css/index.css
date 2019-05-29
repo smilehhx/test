@@ -1,0 +1,66 @@
+body { 
+    font-family:      Georgia, "Times New Roman", Times, serif;
+    margin:           0px;
+    background-color: #fcf7ec;
+  }
+  
+header{
+    margin:10px 10px 0px 10px;
+    height: 50px;
+}
+h1{
+    color: #954b4b;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+/*导航区*/
+.wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.wrapper .inner { width:1500px; margin:0 auto;} /**页面全局宽度**/
+nav.wrapper{
+    background-color:#efe5d0;
+    height: 41px;
+}
+.nav .nav-item{
+    display: inline;
+}
+.nav .nav-item a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    font: 16px/41px "Microsoft YaHei";
+    color:#954b4b;
+    padding: 0 75px;
+    height: 41px;
+}
+
+ul li a:link,ul li a:visited{
+
+    color:#954b4b;
+    border-bottom: none;
+    font-weight: bold;
+}
+.gundong{
+    background-image: url(../imag/imgbj.jpg);
+    padding-top: 10px;
+    margin: 10px;
+    height:550px;
+}
+.zhengwen{
+    text-align:center;
+    color:#723838;
+}
+#footer {
+    color: #954b4b;
+    background-color:#efe5d0;
+    text-align:       center;
+    padding: 15px;
+    margin:           10px;
+    font-size:        90%;
+    clear:right;
+  }

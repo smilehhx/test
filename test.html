@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>个人主页</h1>
+    </header>
+    <nav class="wrapper">
+                <div class="inner">
+                        <ul class="nav">
+                                <li class="nav-item i0"><a href="html/index.html">首页</a></li>   
+                                <li class="nav-item i3"><a href="html/grjl.html">个人经历</a></li>
+                                <li class="nav-item i1"><a href="html/wdms.html">我的美食</a></li>   
+                                <li class="nav-item i2"><a href="html/sjtj.html">书籍推荐</a></li>
+                                <li class="nav-item i4"><a href="html/lxrz.html">旅行日志</a></li>
+                                <li class="nav-item i6"><a href="html/fankui.html">反馈</a></li>
+                            </ul>
+                </div>
+            </nav>
+        <div class="gundong">
+                <div id="butong_net_left" style="overflow:hidden;width:800px;margin:0 auto;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                        <tr><td id="butong_net_left1" valign="top" align="center">
+                        <table cellpadding="2" cellspacing="0" border="0">
+                        <tr align="center">
+                        <td><img src="imag/no1.JPG"></td>
+                        <td><img src="imag/no2.jpg"></td>
+                        <td><img src="imag/no3.jpg"></td>
+                        </tr>
+                        </table>
+                        </td>
+                        <td id="butong_net_left2" valign="top"></td>
+                        </tr>
+                        </table>
+                </div>
+                        <script>
+                        var speed=10//速度数值越大速度越慢
+                        butong_net_left2.innerHTML=butong_net_left1.innerHTML
+                        function Marquee3(){
+                        if(butong_net_left2.offsetWidth-butong_net_left.scrollLeft<=0)
+                        butong_net_left.scrollLeft-=butong_net_left1.offsetWidth
+                        else{
+                        butong_net_left.scrollLeft++
+                        }
+                        }
+                        var MyMar3=setInterval(Marquee3,speed)
+                        butong_net_left.onmouseover=function() {clearInterval(MyMar3)}
+                        butong_net_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+                        </script>
+                        <!--向左滚动代码结束-->
+        </div>
+        <div class="zhengwen">
+                <p><!--眼睛到不了的地方，文字可以，读书可以帮助我们认识这个世界。“读书好！多读书！读好书！”放下电子产品，走进书本的世界，让这个世界少一点浮躁，多一份宁静。--></p>
+            </div>
+            <div id="footer">
+                    © 2019, 个人网页
+                    <br>
+                    The images and some of the texts used on the webpage are from the Internet. The copyright belongs to the original author.
+            </div>
+        
+</body>
+</html>
